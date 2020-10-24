@@ -1,0 +1,57 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	"tau.spinup"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		fade_out = 3
+		vsnd_files=[
+			"sounds/gauss_spinup.vsnd",
+		]
+	}
+	"tau.singleShot"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/single01.vsnd",
+			"sounds/single02.vsnd",
+			"sounds/single2.vsnd",
+			"sounds/single03.vsnd",
+		]
+	}
+	
+	"tau.singleHeavyShot"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/single_overcharged01.vsnd",
+			"sounds/single_overcharged02.vsnd",
+		]
+	}
+	"tau.exploded"=
+	{
+		type = "hlvr_default_3d"
+		volume = 2
+		vsnd_files=[
+			"sounds/gauss_overcharged.vsnd",
+		]
+	}
+	"tau.overcharging"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/gauss_overcharging.vsnd",
+		]
+	}
+	"tau.music"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/nmj.vsnd",
+		]
+	}
+}

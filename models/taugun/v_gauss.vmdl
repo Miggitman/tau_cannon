@@ -1,0 +1,496 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/taugun/v_gauss.dmx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "BoneMarkupList"
+				children = 
+				[
+					{
+						_class = "BoneMarkup"
+						target_bone = "fire02"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "fire01"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "smoke03"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "smoke01"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "smoke02"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "sparks"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+				]
+				bone_cull_type = "None"
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "MaterialGroup"
+						name = "off"
+						remaps = 
+						[
+							{
+								from = "materials/tau/v_gauss.vmat"
+								to = "materials/tau/v_gauss.vmat"
+							},
+							{
+								from = "materials/tau/v_gauss_core.vmat"
+								to = "materials/tau/v_gauss.vmat"
+							},
+						]
+					},
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "v_taucannon.vmat"
+								to = "materials/tau/v_gauss.vmat"
+							},
+							{
+								from = "v_taucannon_core.vmat"
+								to = "materials/tau/v_gauss_core.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+					{
+						_class = "MaterialGroup"
+						name = "on"
+						remaps = [  ]
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						game_class = "prop_data"
+						game_keys = 
+						{
+							base = "Metal.Medium"
+							allowstatic = false
+							bakelighting = true
+							damage_table = ""
+							"dmg.bullets" = -1.0
+							"dmg.club" = -1.0
+							"dmg.explosive" = -1.0
+							"dmg.fire" = -1.0
+							health = -1.0
+							spawn_motion_disabled = false
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "cylinder_idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = "V_TauCannon_Ref"
+							origin_left = [ 0.189894, -22.7507, -13.3585 ]
+							angles_left = [ -10.0, -90.0, 45.0 ]
+							origin_right = [ 0.189894, -22.7507, -13.3585 ]
+							angles_right = [ -10.0, -90.0, -135.0 ]
+							max_distance = 10.0
+							finger_thumb = 0.48
+							finger_pinky = 0.426
+							finger_ring = 0.472
+							finger_middle = 0.503
+							finger_index = 0.511
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, 0.0, 2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ -13.4962, -14.5023, -17.6395 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "cylinder_idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = "V_TauCannon_Ref"
+							origin_left = [ -10.6165, -14.329, -17.8961 ]
+							angles_left = [ 0.0, -90.0, 0.0 ]
+							origin_right = [ -13.0247, -14.4818, -17.7119 ]
+							angles_right = [ 0.0, -90.0, 0.0 ]
+							max_distance = 10.0
+							finger_thumb = 0.751
+							finger_pinky = 0.612
+							finger_ring = 0.627
+							finger_middle = 0.542
+							finger_index = 0.41
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, 0.0, 2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = "Valve"
+							origin_left = [ -14.6368, -20.204, -3.0001 ]
+							angles_left = [ 0.0, -90.0, 90.0 ]
+							origin_right = [ -14.6368, -20.204, -3.0001 ]
+							angles_right = [ 0.0, -90.0, -90.0 ]
+							max_distance = 3.0
+							finger_thumb = 0.648
+							finger_pinky = 0.387
+							finger_ring = 0.381
+							finger_middle = 0.478
+							finger_index = 0.509
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, 0.0, 2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = "Key"
+							origin_left = [ -5.66216, -19.2653, -7.20476 ]
+							angles_left = [ 45.0, 240.0, -45.0 ]
+							origin_right = [ -5.66216, -19.2653, -7.20476 ]
+							angles_right = [ 45.0, 240.0, -45.0 ]
+							max_distance = 3.0
+							finger_thumb = 0.654
+							finger_pinky = 0.418
+							finger_ring = 0.466
+							finger_middle = 0.521
+							finger_index = 0.484
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, 0.0, 2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "CylinderTurn"
+						surface_prop = "prop.metal"
+						collision_prop = "default"
+						radius = 3.337423
+						point0 = [ 0.0, 0.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = "V_TauCannon_Ref"
+						surface_prop = "prop.metal"
+						collision_prop = "default"
+						origin = [ 0.0, 4.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 2.0, 9.76056, 7.04605 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = "Valve"
+						surface_prop = "prop.metal"
+						collision_prop = "default"
+						origin = [ 0.032416, 0.028739, 0.110897 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 1.779826, 1.652643, 0.371338 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "V_TauCannon_Ref"
+						surface_prop = "prop.glass_bottle_large_wine"
+						collision_prop = "default"
+						radius = 1.0
+						point0 = [ 5.437192, -10.798069, -1.41918 ]
+						point1 = [ 12.042431, -13.136011, -7.945863 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = "V_TauCannon_Ref"
+						surface_prop = "prop.metal"
+						collision_prop = "default"
+						origin = [ -0.071462, -1.543513, -7.581473 ]
+						angles = [ 0.0, 0.0, 20.0 ]
+						dimensions = [ 1.913227, 2.795014, 6.870713 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = "V_TauCannon_Ref"
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ 0.06855, -8.575608, -0.257565 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 6.004145, 5.356685, 9.55929 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "V_TauCannon_Ref"
+						surface_prop = "prop.metal"
+						collision_prop = "default"
+						radius = 3.704395
+						point0 = [ -0.082081, -27.884592, 0.121605 ]
+						point1 = [ -0.000771, -23.597788, 0.084042 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = "V_TauCannon_Ref"
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ 0.03451, -14.637571, 0.00546 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 10.668678, 5.514816, 9.467817 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = "Key"
+						surface_prop = "prop.metal"
+						collision_prop = "default"
+						origin = [ 0.135178, -0.019347, 0.012138 ]
+						angles = [ 0.0, 0.0, -22.0 ]
+						dimensions = [ 0.729644, 0.963374, 0.128994 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "V_TauCannon_Ref"
+						surface_prop = "prop.glass_bottle_large_wine"
+						collision_prop = "default"
+						radius = 0.820186
+						point0 = [ -0.03794, -17.421684, -0.032426 ]
+						point1 = [ -0.083904, -38.527214, -0.071709 ]
+					},
+				]
+			},
+			{
+				_class = "Softbody"
+				children = 
+				[
+					{
+						_class = "ClothNode"
+						name = "unnamed_ClothNode"
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						cloth_node_root_bone = "jiggle2"
+						has_stray_radius = false
+						has_world_collision = true
+						cloth_collision_layer0 = true
+						cloth_collision_layer1 = true
+						cloth_collision_layer2 = true
+						cloth_collision_layer3 = true
+						transform_alignment = 0
+						gravity_z = 1.0
+						goal_strength = 0.6
+						goal_damping = 0.3
+						mass = 1.0
+						friction = 0.0
+						stray_radius = 0.0
+						stray_radius_relaxation_factor = 1.0
+						collision_radius = 0.0
+						is_static_node = false
+						allow_rotation = false
+						super_damping = 0.0
+					},
+				]
+				stiffness_on_ragdoll = 0.0
+				cloth_sleep_enabled = false
+			},
+			{
+				_class = "PhysicsJointList"
+				children = 
+				[
+					{
+						_class = "PhysicsJointRevolute"
+						parent_body = "V_TauCannon_Ref"
+						child_body = "CylinderTurn"
+						anchor_origin = [ 0.0, -1.0, 0.0 ]
+						anchor_angles = [ 0.0, 0.0, 90.0 ]
+						collision_enabled = false
+						friction = 6.9
+						enable_limit = false
+						min_angle = 0.0
+						max_angle = 0.0
+					},
+					{
+						_class = "PhysicsJointRevolute"
+						parent_body = "V_TauCannon_Ref"
+						child_body = "Valve"
+						anchor_origin = [ -3.77224, -8.15495, 5.29644 ]
+						anchor_angles = [ 0.0, 0.0, 0.0 ]
+						collision_enabled = false
+						friction = 1.0
+						enable_limit = true
+						min_angle = 0.0
+						max_angle = 180.0
+					},
+					{
+						_class = "PhysicsJointRevolute"
+						parent_body = "V_TauCannon_Ref"
+						child_body = "Key"
+						anchor_origin = [ 3.48152, -9.66123, 1.70156 ]
+						anchor_angles = [ 90.0, 0.0, 0.0 ]
+						collision_enabled = false
+						friction = 1.0
+						enable_limit = true
+						min_angle = -160.0
+						max_angle = 0.0
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "triggerLeft"
+						parent_bone = "fire02"
+						relative_origin = [ 0.851898, 7.422154, -3.267118 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "gunEnd"
+						parent_bone = "fire01"
+						relative_origin = [ 5.867416, 0.051245, 0.009217 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "spinAttachment"
+						parent_bone = "V_TauCannon_Ref"
+						relative_origin = [ -3.028202, -2.741517, 3.362544 ]
+						relative_angles = [ 10.925674, 2.550829, 4.704202 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "base"
+						parent_bone = "V_TauCannon_Ref"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+		]
+		model_archetype = "jointed_physics_model"
+		primary_associated_entity = "prop_ragdoll"
+		anim_graph_name = ""
+	}
+}

@@ -43,7 +43,7 @@
 							},
 							{
 								from = "gasmask_lens.vmat"
-								to = "models/interface/teleport/vr_teleport_green.vmat"
+								to = "models/characters/larry/materials/larry_goggles.vmat"
 							},
 							{
 								from = "gloves.vmat"
@@ -55,11 +55,11 @@
 							},
 							{
 								from = "marine_shades_d.vmat"
-								to = "materials/dev/black_unlit.vmat"
+								to = "materials/deferred_lights/ssao_med_alpha_blend.vmat"
 							},
 							{
 								from = "marine_shades_glass.vmat"
-								to = "materials/dev/black_unlit.vmat"
+								to = "materials/deferred_lights/ssao_med_alpha_blend.vmat"
 							},
 							{
 								from = "nightvision.vmat"
@@ -84,6 +84,58 @@
 							exclude_by_default = false
 							exception_list = [  ]
 						}
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						game_class = "particle"
+						game_keys = 
+						{
+							name = resource:"particles/creatures/snark/snark_eye.vpcf"
+							attachment_point = "lglow"
+							attachment_type = "point_follow"
+							attachment_offset = [ 0.0, 0.0, 0.0 ]
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "particle"
+						game_keys = 
+						{
+							name = resource:"particles/creatures/snark/snark_eye.vpcf"
+							attachment_point = "rglow"
+							attachment_type = "point_follow"
+							attachment_offset = [ 0.0, 0.0, 0.0 ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "lglow"
+						parent_bone = "ValveBiped_Bip01_Head1"
+						relative_origin = [ 5.7, -10.0, -1.35 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "rglow"
+						parent_bone = "ValveBiped_Bip01_Head1"
+						relative_origin = [ 5.7, -10.0, 1.35 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
 					},
 				]
 			},

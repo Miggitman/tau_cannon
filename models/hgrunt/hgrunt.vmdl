@@ -14,55 +14,55 @@
 						remaps = 
 						[
 							{
-								from = "base_m_d.vmat"
+								from = "materials/dev/base_m_d.vmat"
 								to = "materials/hgrunt/base_m.vmat"
 							},
 							{
-								from = "base_mouth.vmat"
+								from = "materials/dev/base_mouth.vmat"
 								to = "materials/hgrunt/base_m.vmat"
 							},
 							{
-								from = "body.vmat"
+								from = "materials/dev/body.vmat"
 								to = "materials/hgrunt/body.vmat"
 							},
 							{
-								from = "cigar_d.vmat"
+								from = "materials/dev/cigar_d.vmat"
 								to = "materials/hgrunt/cigar.vmat"
 							},
 							{
-								from = "eyeball_l.vmat"
+								from = "materials/dev/eyeball_l.vmat"
 								to = "models/characters/gman/materials/gman_eye.vmat"
 							},
 							{
-								from = "eyeball_r.vmat"
+								from = "materials/dev/eyeball_r.vmat"
 								to = "models/characters/gman/materials/gman_eye.vmat"
 							},
 							{
-								from = "gasmask.vmat"
+								from = "materials/dev/gasmask.vmat"
 								to = "materials/hgrunt/gasmask.vmat"
 							},
 							{
-								from = "gasmask_lens.vmat"
+								from = "materials/dev/gasmask_lens.vmat"
 								to = "models/characters/larry/materials/larry_goggles.vmat"
 							},
 							{
-								from = "gloves.vmat"
+								from = "materials/dev/gloves.vmat"
 								to = "materials/hgrunt/gloves.vmat"
 							},
 							{
-								from = "helmet_red.vmat"
-								to = "materials/hgrunt/helmet_red.vmat"
+								from = "materials/dev/helmet_red.vmat"
+								to = "materials/hgrunt/gasmask.vmat"
 							},
 							{
-								from = "marine_shades_d.vmat"
+								from = "materials/dev/marine_shades_d.vmat"
 								to = "materials/deferred_lights/ssao_med_alpha_blend.vmat"
 							},
 							{
-								from = "marine_shades_glass.vmat"
+								from = "materials/dev/marine_shades_glass.vmat"
 								to = "materials/deferred_lights/ssao_med_alpha_blend.vmat"
 							},
 							{
-								from = "nightvision.vmat"
+								from = "materials/dev/nightvision.vmat"
 								to = "materials/hgrunt/nightvision.vmat"
 							},
 						]
@@ -122,8 +122,8 @@
 					{
 						_class = "Attachment"
 						name = "lglow"
-						parent_bone = "ValveBiped_Bip01_Head1"
-						relative_origin = [ 5.7, -10.0, -1.35 ]
+						parent_bone = "head"
+						relative_origin = [ -1.293583, 11.613952, -2.387268 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
@@ -131,13 +131,223 @@
 					{
 						_class = "Attachment"
 						name = "rglow"
-						parent_bone = "ValveBiped_Bip01_Head1"
-						relative_origin = [ 5.7, -10.0, 1.35 ]
+						parent_bone = "head"
+						relative_origin = [ -2.110836, 11.890388, 0.314886 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
 				]
+			},
+			{
+				_class = "BoneMarkupList"
+				children = 
+				[
+					{
+						_class = "BoneMarkup"
+						target_bone = "head"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "neck_0_TWIST"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "jowel_HLPR"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "neckNape_HLPR"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "clavicle_L"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "neck_0"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "clavicle_R"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "packJGL"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "spine_3"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "pect_0_L"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "hand_ik_tweaker"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "pect_0_R"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "spine_2"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "spine_1"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "spine_0"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "leg_upper_R"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "leg_upper_L"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "back_bag_jiggle"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "pelvis"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "pelvis_translations"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "ground_root"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "feet_offset_ground_root"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "root_motion"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "_iklockdriver_right_arm"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "jaw_0"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "eye_R"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "head_end"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "eye_L"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+					{
+						_class = "BoneMarkup"
+						target_bone = "_iklockdriver_left_arm"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+				]
+				bone_cull_type = "Aggressive"
 			},
 		]
 		model_archetype = ""

@@ -123,7 +123,7 @@
 						_class = "Attachment"
 						name = "lglow"
 						parent_bone = "head"
-						relative_origin = [ -1.293583, 11.613952, -2.387268 ]
+						relative_origin = [ 2.019447, 11.269361, -1.35717 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
@@ -132,7 +132,7 @@
 						_class = "Attachment"
 						name = "rglow"
 						parent_bone = "head"
-						relative_origin = [ -2.110836, 11.890388, 0.314886 ]
+						relative_origin = [ 2.121658, 11.363192, 1.356196 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false

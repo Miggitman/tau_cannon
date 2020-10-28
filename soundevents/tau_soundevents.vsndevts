@@ -54,4 +54,172 @@
 			"sounds/nmj.vsnd",
 		]
 	}
+	"fvox.logon"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/logon_advanced.vsnd",
+		]
+	}
+	"fvox.5"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/5.vsnd",
+		]
+	}
+	"fvox.10"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/10.vsnd",
+		]
+	}
+	"fvox.15"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/15.vsnd",
+		]
+	}
+	"fvox.20"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/20.vsnd",
+		]
+	}
+	"fvox.25"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/25.vsnd",
+		]
+	}
+	"fvox.30"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/30.vsnd",
+		]
+	}
+	"fvox.35"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/35.vsnd",
+		]
+	}
+	"fvox.40"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/40.vsnd",
+		]
+	}
+	"fvox.45"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/45.vsnd",
+		]
+	}
+	"fvox.50"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/50.vsnd",
+		]
+	}
+	"fvox.55"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/55.vsnd",
+		]
+	}
+	"fvox.60"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/60.vsnd",
+		]
+	}
+	"fvox.65"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/65.vsnd",
+		]
+	}
+	"fvox.70"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/70.vsnd",
+		]
+	}
+	"fvox.75"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/75.vsnd",
+		]
+	}
+	"fvox.80"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/80.vsnd",
+		]
+	}
+	"fvox.85"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/85.vsnd",
+		]
+	}
+	"fvox.90"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/90.vsnd",
+		]
+	}
+	"fvox.95"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/95.vsnd",
+		]
+	}
+	"fvox.100"=
+	{
+		type = "hlvr_default_3d"
+		volume = 1
+		vsnd_files=[
+			"sounds/fvox/health/100.vsnd",
+		]
+	}
 }

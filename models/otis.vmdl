@@ -25,6 +25,14 @@
 								from = "desert_eagle.vmat"
 								to = "materials/deagle.vmat"
 							},
+							{
+								from = "donut.vmat"
+								to = "models/props/food/bread03a.vmat"
+							},
+							{
+								from = "deagle.vmat"
+								to = "materials/deagle.vmat"
+							},
 						]
 						use_global_default = false
 						global_default_material = ""
@@ -48,6 +56,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
+						name = "otis"
 						filename = "models/otis.dmx"
 						import_scale = 1.0
 						import_filter = 
@@ -58,7 +67,30 @@
 					},
 					{
 						_class = "RenderMeshFile"
+						name = "gun"
 						filename = "models/otis_reference_wgun.dmx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "donut"
+						filename = "models/otis_donut_reference.dmx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "holster"
+						filename = "models/otis_reference_wgunnholster.dmx"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -1903,7 +1935,45 @@
 								_class = "BodyGroupChoice"
 								meshes = 
 								[
-									"unnamed_2",
+									"gun",
+								]
+							},
+						]
+						hidden_in_tools = false
+					},
+					{
+						_class = "BodyGroup"
+						name = "donut"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"donut",
+								]
+							},
+						]
+						hidden_in_tools = false
+					},
+					{
+						_class = "BodyGroup"
+						name = "holster"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"holster",
 								]
 							},
 						]

@@ -1049,6 +1049,16 @@
 									value = 0
 								}
 							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_SV_BODYGROUP_SET_VALUE"
+								event_frame = 15
+								event_keys = 
+								{
+									bodygroup = "holster"
+									value = 0
+								}
+							},
 						]
 						activity_name = ""
 						activity_weight = 1
@@ -1079,6 +1089,16 @@
 								event_keys = 
 								{
 									bodygroup = "gun"
+									value = 1
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_SV_BODYGROUP_SET_VALUE"
+								event_frame = 7
+								event_keys = 
+								{
+									bodygroup = "holster"
 									value = 1
 								}
 							},

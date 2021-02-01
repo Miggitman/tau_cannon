@@ -1586,6 +1586,21 @@
 					{
 						_class = "AnimFile"
 						name = "reload"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_PLAYSOUND"
+								event_frame = 0
+								event_keys = 
+								{
+									name = "vo.combine.grunt.reload_01"
+									stop_on_seq_change = false
+									use_layer_sequence = false
+									tags = ""
+								}
+							},
+						]
 						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
@@ -1720,6 +1735,40 @@
 					{
 						_class = "AnimFile"
 						name = "shootgun2_blend01"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 1
+								event_keys = 
+								{
+									name = resource:"particles/weapon_fx/muzzleflash_mg_heavy.vpcf"
+									detach_from_owner = false
+									stop_on_seq_change = false
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = ""
+									attachment_point = "gunattach"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = ""
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_PLAYSOUND_ATTACHMENT"
+								event_frame = 1
+								event_keys = 
+								{
+									name = "AlyxPistol.FireOld"
+									attachment = "gunattach"
+									stop_on_seq_change = false
+									use_layer_sequence = false
+									tags = ""
+								}
+							},
+						]
 						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
@@ -1951,6 +2000,23 @@
 						framerate = -1.0
 						reverse = false
 					},
+					{
+						_class = "EmptyAnim"
+						name = "animtagsarebad"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						frame_count = 2
+						frame_rate = 30
+					},
 				]
 				default_root_bone_name = ""
 			},
@@ -1981,6 +2047,15 @@
 						name = "eyes"
 						parent_bone = "Bip01_Head"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "gunattach"
+						parent_bone = "p_desert_eagle"
+						relative_origin = [ 9.162233, -0.002241, 4.067719 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
